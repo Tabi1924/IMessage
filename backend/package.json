@@ -6,21 +6,22 @@
   "scripts": {
     "build": "rm -rf dist && cp -R src dist",
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "db:seed": "node src/seeds/user.seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@clerk/express": "^2.1.61",
-    "@imagekit/nodejs": "^7.11.0",
+    "@clerk/express": "^2.1.23",
+    "@imagekit/nodejs": "^7.7.0",
     "cors": "^2.8.6",
     "cron": "^4.4.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongoose": "^9.9.3",
-    "multer": "^2.2.0",
+    "mongoose": "^9.6.3",
+    "multer": "^2.1.1",
     "socket.io": "^4.8.3"
   },
   "devDependencies": {
